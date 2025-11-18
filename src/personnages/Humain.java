@@ -33,6 +33,7 @@ public class Humain {
 		public void boire() {
 			parler("Mmmm, un bon verre de " + boisson + " ! GLOUPS !" );
 		}
+		//feces
 		public void acheter(String bien,int prix) {
 			if (prix>argent) {
 				parler("Je n'ai plus que " + argent + " sous en poche. Je ne peux même pas m'offrir " + bien +" à " + prix +" sous.");
