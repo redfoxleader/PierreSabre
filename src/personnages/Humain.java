@@ -12,13 +12,19 @@ public class Humain {
 		public int getArgent() {
 			return argent;
 		}
+		public void setBoisson(String boisson) {
+			this.boisson = boisson;
+		}
+		public void setArgent(int argent) {
+			this.argent = argent;
+		}
 		public void gagnerArgent(int montant) {
 			argent+=montant;
 		}
 		public void perdreArgent(int montant) {
 			argent-=montant;
 		}
-		private void parler(String texte) {
+		protected void parler(String texte) {
 			System.out.println("("+nom+")-" +  texte );
 		}
 		public void direBonjour() {
@@ -41,4 +47,6 @@ public class Humain {
 			this.boisson=boisson;
 			this.argent=argent;
 		}
+		
 }
+
